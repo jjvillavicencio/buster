@@ -1,0 +1,24 @@
+/* Empty. Add your own CSS if you like */
+.back-login{
+background-image: url("../img/f_login.jpg")!important;
+background-size: 100% 100%;
+}
+
+.l-fondo{
+  background-color:rgba(255, 255, 255, 0.3)!important;
+}
+input::-webkit-input-placeholder {
+color: #808080 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #808080 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #808080 !important;
+}
+
+input:-ms-input-placeholder {
+color: #808080 !important;
+}
