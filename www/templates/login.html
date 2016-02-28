@@ -1,47 +1,52 @@
 <ion-view>
   <div class="bar bar-header bar-balanced">
-  <h1 class="title"> Buster</h1>
-</div>
+    <h1 class="title"> Buster</h1>
+  </div>
 
   <ion-content class="has-header padding back-login">
     <div align="center">
-<img src="../img/AVES.png" width="45%" height="auto"  alt="" />
-</div>
+      <img src="../img/AVES.png" width="45%" height="auto"  alt="" />
+    </div>
+
     <div class="list">
-    <label class="item item-input l-fondo ">
-      <span class="input-label icon-left ion-ios-person">  </span>
-      <input type="text" placeholder="usuario@mail.com" class="i-login">
+      <label class="item item-input l-fondo ">
+        <span class="input-label icon-left ion-ios-person">  </span>
+        <input type="text" placeholder="usuario@mail.com" class="i-login">
+      </label>
+
+      <label class="item item-input l-fondo">
+        <span class="input-label icon-left ion-ios-locked">  </span>
+        <input type="password" placeholder="**********" class="i-login">
+      </label>
+    </div>
+
+    <label>
+      <button class="button  icon-right ion-ios-arrow-right button-small button-block button-stable"
+              ui-sref="menu.busqueda">
+        Ingresar
+      </button>
     </label>
-    <label class="item item-input l-fondo">
-      <span class="input-label icon-left ion-ios-locked">  </span>
-      <input type="password" placeholder="**********" class="i-login">
+
+    <label>
+      <button class="button  icon-left  ion-social-facebook button-small button-block button-positive"
+              ng-click="login('facebook')">
+        Ingresar con Facebook
+      </button>
     </label>
 
-  </div>
-  <label>
-    <button class="button  icon-right ion-ios-arrow-right button-small button-block button-stable"
-            ui-sref="menu.busqueda">
-    Ingresar
-</button>
-  </label>
+    <label>
+      <button class="button  icon-left ion-social-twitter button-small button-block button-calm"
+              ng-click="login('twitter')">
+        Ingresar con Twitter
+      </button>
+    </label>
 
-  <label>
-    <button class="button  icon-left  ion-social-facebook button-small button-block button-positive">
-    Ingresar con Facebook
-</button>
-  </label>
-
-  <label>
-    <button class="button  icon-left ion-social-twitter button-small button-block button-calm">
-    Ingresar con Twitter
-</button>
-  </label>
-
-  <label>
-    <button class="button  icon-left  ion-social-google button-small button-block button-assertive">
-    Ingresar con Google
-</button>
-  </label>
+    <label>
+      <button class="button  icon-left  ion-social-google button-small button-block button-assertive"
+              ng-click="login('google')">
+        Ingresar con Google
+      </button>
+    </label>
 
   </ion-content>
 

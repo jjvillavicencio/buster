@@ -21,16 +21,16 @@
                 <div class="item item-divider">Información Usuario</div>
                 <div class="item item-body">
                     <div style="text-align:center;">
-                        <img src="img/dVHZT4PvStSYuqewhN7N_FaceQ1430889103191.png" width="100%" height="auto">
+                        <img src="{{authData.facebook.profileImageURL }}" width="100%" height="auto">
                     </div>
                     <form class="list">
                         <label class="item item-input">
                             <span class="input-label">Nombre</span>
-                            <input type="text" placeholder="Nombre de Usuario">
+                            <input type="text" placeholder="{{authData.facebook.displayName}}">
                         </label>
                         <label class="item item-input">
                             <span class="input-label">Correo</span>
-                            <input type="text" placeholder="Correo de Usuario">
+                            <input type="text" placeholder="{{authData.facebook.email}}">
                         </label>
                         <label class="item item-input">
                             <span class="input-label">Fecha N.</span>
@@ -40,11 +40,22 @@
                 </div>
             </div>
             <div class="list card">
-                <div class="item item-divider">Opciones</div>
+                <div class="item item-divider">
+                  Opciones
+                </div>
                 <div class="item item-body">
-                    <a ui-sref="menu.busqueda" menu-close="" class="button button-stable button-block button-small icon-left ion-android-search">Busqueda</a>
-                    <a ui-sref="menu.favoritos" menu-close="" class="button button-stable button-block button-small icon-left ion-android-favorite">Favoritos</a>
-                    <a ui-sref="login" menu-close="" class="button button-stable button-block button-small icon-left ion-log-out">Salir</a>
+                    <a ui-sref="menu.busqueda" menu-close=""
+                       class="button button-stable button-block button-small icon-left ion-android-search">
+                      Busqueda
+                    </a>
+                    <a ui-sref="menu.favoritos" menu-close=""
+                       class="button button-stable button-block button-small icon-left ion-android-favorite">
+                      Favoritos
+                    </a>
+                    <a  menu-close="" class="button button-stable button-block button-small icon-left ion-log-out"
+                        ng-click="logout()">
+                      Salir
+                    </a>
                 </div>
             </div>
         </ion-content>

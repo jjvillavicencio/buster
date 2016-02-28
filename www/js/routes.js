@@ -5,14 +5,16 @@ angular.module('starter.routes',[])
 
     // setup an abstract state for the tabs directive
       .state('entrar',{
-        url:"/entrar",
-        templateUrl: "templates/login.html"
+        url:'/entrar',
+        templateUrl: 'templates/login.html',
+        controller: 'loginCtrl'
       })
 
       .state('menu', {
         url: '/side-menu-cont',
         abstract:true,
-        templateUrl: 'templates/menu.html'
+        templateUrl: 'templates/menu.html',
+        controller: 'menuCtrl'
       })
 
       .state('menu.busqueda', {

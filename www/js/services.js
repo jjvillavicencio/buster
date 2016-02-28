@@ -1,5 +1,11 @@
 angular.module('starter.services', [])
 
+  .factory('loginSrv',function () {
+    return{
+      data: {}
+    };
+  })
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 

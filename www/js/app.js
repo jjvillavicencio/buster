@@ -1,6 +1,6 @@
 // Ionic Starter App
 
-angular.module('starter', ['ionic', 'starter.routes', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'firebase', 'starter.routes', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -16,4 +16,11 @@ angular.module('starter', ['ionic', 'starter.routes', 'starter.controllers', 'st
       StatusBar.styleDefault();
     }
   });
-});
+})
+
+.factory('Auth', function ($firebaseAuth) {
+  var endPoint = "https://buster-dev.firebaseio.com/users";
+  var usersRef = new Firebase(endPoint);
+
+  return $firebaseAuth(usersRef);   
+})
