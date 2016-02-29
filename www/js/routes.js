@@ -21,7 +21,8 @@ angular.module('starter.routes',[])
         url: '/busqueda',
         views: {
           'side-menu-cont': {
-            templateUrl: 'templates/busqueda.html'
+            templateUrl: 'templates/busqueda.html',
+            controller: 'busquedaCtrl'
           }
         }
       })
@@ -30,7 +31,8 @@ angular.module('starter.routes',[])
         url: '/favoritos',
         views: {
           'side-menu-cont': {
-            templateUrl: 'templates/favoritos.html'
+            templateUrl: 'templates/favoritos.html',
+            controller : 'favoritosCtrl'
           }
         }
       });

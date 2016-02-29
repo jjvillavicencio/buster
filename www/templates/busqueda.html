@@ -18,19 +18,25 @@
     </div>
 
        <form class="list"></form>
-       <ion-list>
-           <ion-item class="item-thumbnail-left efecto">
+       <ion-list can-swipe="true">
+           <ion-item class="item-thumbnail-left efecto" ng-class="fav()">
                <img>
-               <h2><strong>Titulo</strong>  </h2>
+               <h2 class="icon-right"><strong>Titulo</strong>   <i class="fav ion-icon ion-ios-star"></i></h2>
                <p>Descripción</p>
+
                <div class="button-bar">
                    <button class="button button-stable button-block button-small icon ion-social-facebook"></button>
                    <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
                    <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
                    <button class="button button-stable button-block button-small icon ion-archive"></button>
                </div>
+
+               <ion-option-button class="button-stable"
+                         ng-click="addFav()">
+                         <i class="ion-icon ion-ios-star"></i>
+              </ion-option-button>
            </ion-item>
-      <ion-item class="item-thumbnail-left efecto">
+           <ion-item class="item-thumbnail-left efecto">
              <img>
              <h2> <strong>Titulo</strong> </h2>
              <p>Descripción</p>
@@ -40,6 +46,10 @@
                  <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
                  <button class="button button-stable button-block button-small icon ion-archive"></button>
              </div>
+             <ion-option-button class="button-stable"
+                       ng-click="favs = !favs">
+                       <i class="ion-icon ion-ios-star"></i>
+            </ion-option-button>
          </ion-item>
          <ion-item class="item-thumbnail-left efecto">
              <img>
@@ -50,6 +60,10 @@
                  <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
                  <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
                  <button class="button button-stable button-block button-small icon ion-archive"></button>
+                 <ion-option-button class="button-stable"
+                           ng-click="edit(item)">
+                           <i class="ion-icon ion-ios-star"></i>
+                </ion-option-button>
              </div>
          </ion-item>
        </ion-list>

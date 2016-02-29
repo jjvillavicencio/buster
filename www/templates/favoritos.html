@@ -1,34 +1,57 @@
 <ion-view title="Favoritos">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
-        <ion-list>
-            <ion-item class="item-thumbnail-left">
-                <img>
-                <h2>Favoritos 1</h2>
-                <p>Item</p>
-            </ion-item>
+        <ion-list can-swipe="true">
+          <ion-item class="item-thumbnail-left efecto" ng-class="fav()">
+              <img>
+              <h2 class="icon-right"><strong>Titulo</strong>   <i class="fav ion-icon ion-ios-star"></i></h2>
+              <p>Descripción</p>
+
+              <div class="button-bar">
+                  <button class="button button-stable button-block button-small icon ion-social-facebook"></button>
+                  <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
+                  <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
+                  <button class="button button-stable button-block button-small icon ion-archive"></button>
+              </div>
+
+              <ion-option-button class="button-stable"
+                        ng-click="addFav()">
+                        <i class="ion-icon ion-ios-star"></i>
+             </ion-option-button>
+          </ion-item>
+          <ion-item class="item-thumbnail-left efecto" ng-class="fav()">
+              <img>
+              <h2 class="icon-right"><strong>Titulo</strong>   <i class="fav ion-icon ion-ios-star"></i></h2>
+              <p>Descripción</p>
+
+              <div class="button-bar">
+                  <button class="button button-stable button-block button-small icon ion-social-facebook"></button>
+                  <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
+                  <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
+                  <button class="button button-stable button-block button-small icon ion-archive"></button>
+              </div>
+
+              <ion-option-button class="button-stable"
+                        ng-click="addFav()">
+                        <i class="ion-icon ion-ios-star"></i>
+             </ion-option-button>
+          </ion-item>
+          <ion-item class="item-thumbnail-left efecto" ng-class="fav()">
+              <img>
+              <h2 class="icon-right"><strong>Titulo</strong>   <i class="fav ion-icon ion-ios-star"></i></h2>
+              <p>Descripción</p>
+
+              <div class="button-bar">
+                  <button class="button button-stable button-block button-small icon ion-social-facebook"></button>
+                  <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
+                  <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
+                  <button class="button button-stable button-block button-small icon ion-archive"></button>
+              </div>
+
+              <ion-option-button class="button-stable"
+                        ng-click="addFav()">
+                        <i class="ion-icon ion-ios-star"></i>
+             </ion-option-button>
+          </ion-item>
         </ion-list>
-        <div class="button-bar">
-            <button class="button button-stable button-block button-small icon ion-ios-star"></button>
-            <button class="button button-stable button-block button-small icon ion-social-facebook"></button>
-            <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
-            <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
-            <button class="button button-stable button-block button-small icon ion-archive"></button>
-        </div>
-        <ion-list>
-            <ion-item class="item-thumbnail-left">
-                <img>
-                <h2>Favorito 2</h2>
-                <p>Item</p>
-            </ion-item>
-        </ion-list>
-        <ion-list></ion-list>
-        <ion-list></ion-list>
-        <div class="button-bar">
-            <button class="button button-stable button-block button-small icon ion-android-star"></button>
-            <button class="button button-stable button-block button-small icon ion-social-facebook"></button>
-            <button class="button button-stable button-block button-small icon ion-social-twitter"></button>
-            <button class="button button-stable button-block button-small icon ion-social-googleplus"></button>
-            <button class="button button-stable button-block button-small icon ion-archive"></button>
-        </div>
     </ion-content>
 </ion-view>

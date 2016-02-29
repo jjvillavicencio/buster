@@ -42,4 +42,46 @@ angular.module('starter.controllers', ['ionic','firebase'])
       console.log('holas');
       Auth.$unauth();
     }
+
+    $scope.verDatos = function (red) {
+      switch (red) {
+        case 'twitter':
+              if (loginSrv.data.provider === 'twitter') {
+                return true
+              }else {
+                return false;
+              }
+          break;
+        case 'facebook':
+              if (loginSrv.data.provider === 'facebook') {
+                return true
+              }else {
+                return false;
+              }
+          break;
+        case 'google':
+              if (loginSrv.data.provider === 'google') {
+                return true
+              }else {
+                return false;
+              }
+          break;
+        default:
+
+      }
+    }
+  })
+
+  .controller('busquedaCtrl', function($scope, Auth, $location,loginSrv) {
+    $scope.fav = function () {
+      return 'hola';
+    }
+
+  })
+
+  .controller('favoritosCtrl', function($scope, Auth, $location,loginSrv) {
+    $scope.fav = function () {
+      return 'hola';
+    }
+
   })
